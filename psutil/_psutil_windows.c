@@ -2423,6 +2423,8 @@ error:
  */
 static PyObject *
 psutil_users(PyObject *self, PyObject *args) {
+
+/*
     HANDLE hServer = NULL;
     LPTSTR buffer_user = NULL;
     LPTSTR buffer_addr = NULL;
@@ -2563,6 +2565,8 @@ error:
         WTSFreeMemory(buffer_user);
     if (buffer_addr != NULL)
         WTSFreeMemory(buffer_addr);
+    return NULL;
+*/
     return NULL;
 }
 

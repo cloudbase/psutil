@@ -102,11 +102,11 @@ if sys.platform.startswith("win32"):
             ('_AVAIL_WINVER_', get_winver()),
             ('_CRT_SECURE_NO_WARNINGS', None),
             # see: https://github.com/giampaolo/psutil/issues/348
-            ('PSAPI_VERSION', 1),
+            ('PSAPI_VERSION', 2),
         ],
         libraries=[
             "psapi", "kernel32", "advapi32", "shell32", "netapi32",
-            "iphlpapi", "wtsapi32", "ws2_32",
+            "iphlpapi", "ws2_32",
         ],
         # extra_compile_args=["/Z7"],
         # extra_link_args=["/DEBUG"]
