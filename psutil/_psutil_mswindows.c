@@ -2531,6 +2531,7 @@ error:
 static PyObject*
 get_system_users(PyObject* self, PyObject* args)
 {
+/*
     HANDLE hServer = NULL;
     LPTSTR buffer_user = NULL;
     LPTSTR buffer_addr = NULL;
@@ -2670,6 +2671,7 @@ error:
     if (buffer_addr != NULL) {
         WTSFreeMemory(buffer_addr);
     }
+*/
     return NULL;
 }
 

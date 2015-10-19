@@ -91,11 +91,10 @@ if sys.platform.startswith("win32"):
             ('_WIN32_WINNT', get_winver()),
             ('_AVAIL_WINVER_', get_winver()),
             # see: https://code.google.com/p/psutil/issues/detail?id=348
-            ('PSAPI_VERSION', 1),
+            ('PSAPI_VERSION', 2),
         ],
         libraries=[
             "psapi", "kernel32", "advapi32", "shell32", "netapi32", "iphlpapi",
-            "wtsapi32",
         ],
         # extra_compile_args=["/Z7"],
         # extra_link_args=["/DEBUG"]
