@@ -105,7 +105,7 @@ if WINDOWS:
         ('_AVAIL_WINVER_', get_winver()),
         ('_CRT_SECURE_NO_WARNINGS', None),
         # see: https://github.com/giampaolo/psutil/issues/348
-        ('PSAPI_VERSION', 1),
+        ('PSAPI_VERSION', 2),
     ])
 
     ext = Extension(
@@ -122,7 +122,7 @@ if WINDOWS:
         define_macros=macros,
         libraries=[
             "psapi", "kernel32", "advapi32", "shell32", "netapi32",
-            "iphlpapi", "wtsapi32", "ws2_32", "PowrProf",
+            "iphlpapi", "ws2_32", "PowrProf",
         ],
         # extra_compile_args=["/Z7"],
         # extra_link_args=["/DEBUG"]
